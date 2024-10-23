@@ -28,11 +28,7 @@ package main
 import "math"
 
 func divide(dividend int, divisor int) int {
-	if divisor == 0 {
-		return
-	}
 
-	// Perform the division and truncate the result
 	result := float64(dividend) / float64(divisor)
 	truncatedResult := int(math.Trunc(result))
 
